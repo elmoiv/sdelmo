@@ -11,8 +11,8 @@ import sdelmo
 
 sdelmo.scdl(client_id, track_url)
 ```
-- _client_id_ : must be string value.
-- _track_url_ : must be string value.
+- _client_id_ : must be a string value.
+- _track_url_ : must be a string value.
 
 # How to get client_id (in case of expiry)
 You can find client_id by searching through XHR requests:
