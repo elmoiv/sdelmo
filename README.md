@@ -5,6 +5,21 @@ Simple Soundcloud music downloader.
 * Download any public soundcloud audio file.
 * audio files can be downloaded with cover if you have [eyeD3](https://eyed3.readthedocs.io/).
 
+## Installation
+`sdelmo` requires Python 3.
+
+Use `pip` to install the package from PyPI:
+
+```bash
+pip install sdelmo
+```
+
+Or, install the latest version of the package from GitHub:
+
+```bash
+pip install git+https://github.com/elmoiv/sdelmo.git
+```
+
 ## Usage
 ```
 import sdelmo
