@@ -25,7 +25,7 @@ pip install git+https://github.com/elmoiv/sdelmo.git
 
 ## Usage
 ```
-from sdelmo scdl
+from sdelmo import scdl
 
 scdl('6aSX01kZxpetA85mf5R9Ezqs3ozjO2zc','https://soundcloud.com/lifeofdesiigner/desiigner-panda')
 ```
