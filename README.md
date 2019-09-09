@@ -25,9 +25,9 @@ pip install git+https://github.com/elmoiv/sdelmo.git
 
 ## Usage
 ```
-import sdelmo
+from sdelmo scdl
 
-sdelmo.scdl(client_id, track_url)
+scdl('6aSX01kZxpetA85mf5R9Ezqs3ozjO2zc','https://soundcloud.com/lifeofdesiigner/desiigner-panda')
 ```
 
 ## How to get `client_id` (in case of expiry)
