@@ -1,20 +1,3 @@
-#       sdelmo.py, simple Souncloud music downloader.
-#
-#       Copyright 2019 Khaled El-Morshedy <elmoiv>
-#
-#       This program is free software; you can redistribute it and/or modify
-#       it under the terms of the attached License.
-#
-#       This program is distributed in the hope that it will be useful,
-#       but WITHOUT ANY WARRANTY; without even the implied warranty of
-#       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#       GNU General Public License for more details.
-#
-#       You should have received a copy of the GNU General Public License
-#       along with this program; if not, write to the Free Software
-#       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#       MA 02110-1301, USA.
-
 import requests, json, os, sys
 
 from lxml import html
@@ -63,7 +46,7 @@ def scdl(client_id, url):
     trackTitle = tree.xpath('/html/head/meta[23]/@content')[0]
     trackCover = tree.xpath('/html/head/meta[28]/@content')[0]
 
-    api = json.loads(requests.get(f'https://api.soundcloud.com/i1/tracks/{trackId}/streams?client_id={client_id}').content)
+    api = json.loads(requests.get('https://api.soundcloud.com/i1/tracks/{}/streams?client_id={}'.format(trackId, client_id)).content)
     trackUrl = api['http_mp3_128_url']
     
     # I saved it as $ to avoid unicode error for non english names after applying eyed3
@@ -82,4 +65,4 @@ def scdl(client_id, url):
     except:
         print('Unexpected Error!')
     
-    os.rename('$.mp3', f'{Filter(trackTitle)}.mp3')
+    os.rename('$.mp3', '{}.mp3'.format(Filter(trackTitle)))
