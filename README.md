@@ -30,7 +30,7 @@ import sdelmo
 sdelmo.scdl(client_id, track_url)
 ```
 
-## How to get client_id (in case of expiry)
+## How to get `client_id` (in case of expiry)
 
 You can find client_id by searching through XHR requests:
 
