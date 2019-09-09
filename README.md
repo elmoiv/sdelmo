@@ -38,3 +38,6 @@ You can find client_id by searching through XHR requests:
 
 ## Contributing
 Please contribute! If you want to fix a bug, suggest improvements, or add new features to the project, just [open an issue](https://github.com/elmoiv/sdelmo/issues) or send me a pull request.
+
+## TODO
+* Gathering `client_id` automatically
