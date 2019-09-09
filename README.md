@@ -1,4 +1,7 @@
 # sdelmo
+[![Build Status](https://api.travis-ci.org/elmoiv/sdelmo.svg?branch=master)](https://travis-ci.org/elmoiv/sdelmo)
+[![Python version](https://img.shields.io/badge/python-3.6-blue.svg)](https://pypi.org/project/sdelmo/)
+
 Simple Soundcloud music downloader.
 
 ## Features
