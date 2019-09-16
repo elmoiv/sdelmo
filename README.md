@@ -36,6 +36,16 @@ You can find client_id by searching through XHR requests:
 
 ![alt text](https://i.imgur.com/Xl3JnuP.png)
 
+## Installing on Android (via Termux)
+
+Type these commands in termux:
+
+* `apt update && apt upgrade`
+* `pkg install clang`
+* `pkg install python`
+* `pkg install libxml2 libcrypt libxslt libiconv`
+* `pip install sdelmo`
+
 ## Contributing
 Please contribute! If you want to fix a bug, suggest improvements, or add new features to the project, just [open an issue](https://github.com/elmoiv/sdelmo/issues) or send me a pull request.
 
