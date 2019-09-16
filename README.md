@@ -41,9 +41,7 @@ You can find client_id by searching through XHR requests:
 Type these commands in termux:
 
 * `apt update && apt upgrade`
-* `pkg install clang`
-* `pkg install python`
-* `pkg install libxml2 libcrypt libxslt libiconv`
+* `pkg install clang python libxml2 libcrypt libxslt libiconv zlib`
 * `pip install sdelmo`
 
 ## Contributing
