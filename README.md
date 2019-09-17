@@ -36,7 +36,7 @@ You can find client_id by searching through XHR requests:
 
 ![alt text](https://i.imgur.com/Xl3JnuP.png)
 
-## Installing on Android (via Termux)
+## Installing on Android (via [Termux](https://termux.com/))
 
 Type these commands in termux:
 
