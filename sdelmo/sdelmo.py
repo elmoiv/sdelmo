@@ -1,5 +1,4 @@
 import requests, json, os, sys
-
 from lxml import html
 
 # https://sumit-ghosh.com/articles/python-download-progress-bar/
@@ -50,15 +49,17 @@ def scdl(client_id, url):
 
     try:
         import eyed3
+
         print('Adding Cover...\n')
         mp3 = eyed3.load('$.mp3')
-        if mp3.tag == None:
+
+        if mp3.tag is None:
             mp3.initTag()
+
         mp3.tag.images.set(3, requests.get(trackCover).content, 'image/jpeg')
         mp3.tag.save()
+
     except ImportError:
         print('Eyed3 module is not found! Songs will be saved without album cover :(')
-    except:
-        print('Unexpected Error!')
 
     os.rename('$.mp3', '{}.mp3'.format(Filter(trackTitle)))
