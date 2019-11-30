@@ -5,8 +5,8 @@
 Simple Soundcloud music downloader.
 
 ## Features
-* Download any public soundcloud audio file.
-* audio files can be downloaded with cover if you have [eyeD3](https://eyed3.readthedocs.io/).
+-   Download any public soundcloud audio file.
+-   audio files can be downloaded with cover if you have [eyeD3](https://eyed3.readthedocs.io/).
 
 ## Installation
 `sdelmo` requires Python 3.
@@ -40,12 +40,12 @@ You can find client_id by searching through XHR requests:
 
 Type these commands in termux:
 
-* `apt update && apt upgrade`
-* `pkg install clang python libxml2 libcrypt libxslt libiconv zlib`
-* `pip install sdelmo`
+-   `apt update && apt upgrade`
+-   `pkg install clang python libxml2 libcrypt libxslt libiconv zlib`
+-   `pip install sdelmo`
 
 ## Contributing
 Please contribute! If you want to fix a bug, suggest improvements, or add new features to the project, just [open an issue](https://github.com/elmoiv/sdelmo/issues) or send me a pull request.
 
 ## TODO
-* Gathering `client_id` automatically
+-   Gathering `client_id` automatically
