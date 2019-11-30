@@ -2,17 +2,15 @@ import requests, json, os, sys
 
 from lxml import html
 
-
 # https://sumit-ghosh.com/articles/python-download-progress-bar/
 def download(url, filename):
-
     with open(filename, 'wb') as f:
         response = requests.get(url, stream=True)
         total = response.headers.get('content-length')
 
         if total is None:
             f.write(response.content)
-        
+
         else:
             downloaded = 0
             total = int(total)
@@ -31,12 +29,10 @@ def download(url, filename):
 
     sys.stdout.write('\n')
 
-
 def Filter(txt):
     for i in r'<>:"/\|?*':
         txt = txt.replace(i, ' - ')
     return txt
-
 
 def scdl(client_id, url):
     page = requests.get(url)
@@ -48,7 +44,7 @@ def scdl(client_id, url):
 
     api = json.loads(requests.get('https://api.soundcloud.com/i1/tracks/{}/streams?client_id={}'.format(trackId, client_id)).content)
     trackUrl = api['http_mp3_128_url']
-    
+
     # I saved it as $ to avoid unicode error for non english names after applying eyed3
     download(trackUrl, '$.mp3')
 
@@ -64,5 +60,5 @@ def scdl(client_id, url):
         print('Eyed3 module is not found! Songs will be saved without album cover :(')
     except:
         print('Unexpected Error!')
-    
+
     os.rename('$.mp3', '{}.mp3'.format(Filter(trackTitle)))
