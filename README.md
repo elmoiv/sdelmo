@@ -4,6 +4,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f52faa974e2c42c3873839cab853b854)](https://www.codacy.com/manual/elmoiv/sdelmo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=elmoiv/sdelmo&amp;utm_campaign=Badge_Grade)
 
 Simple Soundcloud music downloader.
+## *Module no longer works due to change in soundcloud api mechanism*
+## *Wait for a fix soon*
 
 ## Features
 -   Download any public soundcloud audio file.
